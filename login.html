@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <title>اتوماسیون اداری تحلیلگران</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alireza Moradi">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="main-container">
+  
+    <section class="login">
+        <form action="login.php" method="post" class="login-form">
+            <div class="form-title">اتوماسیون تحلیلگران</div>
+           <label for="members-type">
+              <span>ورود بعنوان:</span> <br>
+               <select id="members-type" name="position">
+                   <option value="راهبر سیستم">
+                       راهبر سیستم
+                    </option>
+                   <option value="مدیر سیستم">
+                       مدیر سیستم
+                   </option>
+                   <option value="کاربر معمولی">
+                       کاربر معمولی
+                   </option>
+               </select>
+            </label>
+            <label for="username">
+                <span>نام کاربری:</span> <br>
+                <input dir="ltr" id="username" name="username" autocomplete="off" type="text">
+            </label>
+            <label for="password">
+                <span>رمز عبور:</span> <br>
+                <input dir="ltr" id="password" type="password">
+            </label>
+            <button class="login-button" name="submit">ورود</button>
+        </form>
+    </section>
+    <div class="left-bg"></div>
+</div>
+
+</body>
+</html>

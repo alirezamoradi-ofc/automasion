@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل کاربر</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="normal-user.css">
+    <link rel="stylesheet" href="login.css">
+    <!--fontawesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <section class="normal-user">
+            <header>
+                <ul>
+                    <li>
+                        <span>نام کاربری:</span>
+                        <span>عرفان اسدی</span>
+                    </li>
+                    <li>
+                        <span> ورود بعنوان:</span>
+                        <span>کاربر معمولی</span>
+                    </li>
+                </ul>
+                <button class="log-out">خروج</button>
+            </header>
+            <aside>
+                <ul class="panel-list">
+                    <li class="container">
+                        <div>
+                            عملیات
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <ul>
+                            <li class="panel-opener" data-context-target="letter-content">نامه</li>
+                            <li class="panel-opener" data-context-target="add-member">افزودن عضو</li>
+                        </ul>
+                    </li>
+                    <li class="container">
+                        <div>
+                            گزارش
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <ul>
+                            <li class="panel-opener" data-context-target="members-list">لیست اعضا</li>
+                            <li class="panel-opener" data-context-target="letters-list">گزارش نامه ها</li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <main class="context">
+                <section class="letter-content">
+                    <table class="letter-table">
+                        <thead>
+                            <tr>
+                                <th>تاریخ امروز</th>
+                                <th>اطلاعات نامه</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="date-cell">1400/09/24</td>
+                                <td>
+                                    4968 / ن / ع</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <form action="#" class="send-letter-form">
+                        <div class="table-row">
+                            <input type="text" required placeholder="نام فرستنده">
+                            <input type="text" required placeholder="نام گیرنده">
+                        </div>
+                        <div class="table-row">
+                            <input type="text" required placeholder="موضوع">
+                            <input type="password" required placeholder="رمز عبور">
+                        </div>
+                        <textarea placeholder="متن نامه را اینجا بنویسید..."></textarea>
+                        <div class="buttons">
+                            <button class="cancel-button">لغو</button>
+                            <button class="send-button">ارسال</button>
+                        </div>
+                    </form>
+                </section>
+                <div class="letters-list">
+                    <section class="letter">
+                        <button class="remove-letter">حذف</button>
+                        <header>
+                            <ul>
+                                <li>
+                                    <span>فرستنده:</span>
+                                    <strong>عرفان اسدی</strong>
+                                </li>
+                                <li>
+                                    <span>گیرنده:</span>
+                                    <strong>علیرضا مرادی</strong>
+                                </li>
+                                <li>
+                                    <span>موضوع:</span>
+                                    <strong>تنظیم قرارداد پروژه جدید</strong>
+                                </li>
+                            </ul>
+                        </header>
+                        <p>
+                            این یک متنی تستی است که جهت اضافه کردن و شلوغ کاری
+                            نوشته میشود، لطفا آنرا جدی نگیرید. <br>
+                            با تشکر
+                            این یک متنی تستی است که جهت اضافه کردن و شلوغ کاری
+                            نوشته میشود، لطفا آنرا جدی نگیرید. <br>
+                            با تشکر <br>
+                            این یک متنی تستی است که جهت اضافه کردن و شلوغ کاری
+                            نوشته میشود، لطفا آنرا جدی نگیرید. <br>
+                            با تشکر
+                        </p>
+                    </section>
+                    <section class="letter">
+                        <button class="remove-letter">حذف</button>
+                        <header>
+                            <ul>
+                                <li>
+                                    <span>فرستنده:</span>
+                                    <strong>هنگامه حیدری</strong>
+                                </li>
+                                <li>
+                                    <span>گیرنده:</span>
+                                    <strong>عرفان اسدی</strong>
+                                </li>
+                                <li>
+                                    <span>موضوع:</span>
+                                    <strong>جلسه پیش از ارائه سیستم اتوماسیون</strong>
+                                </li>
+                            </ul>
+                        </header>
+                        <p>
+                            این یک متنی تستی است که جهت اضافه کردن و شلوغ کاری
+                            نوشته میشود، لطفا آنرا جدی نگیرید. <br>
+                            با تشکر
+                            این یک متنی تستی است که جهت اضافه کردن و شلوغ کاری
+                            نوشته میشود، لطفا آنرا جدی نگیرید. <br>
+                            با تشکر <br>
+                            این یک متنی تستی است که جهت اضافه کردن و شلوغ کاری
+                            نوشته میشود، لطفا آنرا جدی نگیرید. <br>
+                            با تشکر
+                        </p>
+                    </section>
+                    <section class="letter">
+                        <button class="remove-letter">حذف</button>
+                        <header>
+                            <ul>
+                                <li>
+                                    <span>فرستنده:</span>
+                                    <strong>هنگامه حیدری</strong>
+                                </li>
+                                <li>
+                                    <span>گیرنده:</span>
+                                    <strong>عرفان اسدی</strong>
+                                </li>
+                                <li>
+                                    <span>موضوع:</span>
+                                    <strong>جلسه پیش از ارائه سیستم اتوماسیون</strong>
+                                </li>
+                            </ul>
+                        </header>
+                        <p>
+                            این یک متنی تستی است که جهت اضافه کردن و شلوغ کاری
+                            نوشته میشود، لطفا آنرا جدی نگیرید. <br>
+                            با تشکر
+                            این یک متنی تستی است که جهت اضافه کردن و شلوغ کاری
+                            نوشته میشود، لطفا آنرا جدی نگیرید. <br>
+                            با تشکر <br>
+                            این یک متنی تستی است که جهت اضافه کردن و شلوغ کاری
+                            نوشته میشود، لطفا آنرا جدی نگیرید. <br>
+                            با تشکر
+                        </p>
+                    </section>
+                </div>
+                <section class="add-member">
+                    <form action="#" class="login-form add-member-form">
+
+                        <label for="firstName">
+                            <span>نام :</span> <br>
+                            <input dir="ltr" id="firstName" autocomplete="off" type="text">
+                        </label>
+                        <label for="lastName">
+                            <span>نام خانوادگی:</span> <br>
+                            <input dir="ltr" id="lastName" autocomplete="off" type="text">
+                        </label>
+                        <label for="username">
+                            <span>نام کاربری:</span> <br>
+                            <input id="username" autocomplete="off" type="text">
+                        </label>
+
+                        <label for="password">
+                            <span>رمز عبور:</span> <br>
+                            <input dir="ltr" id="password" type="password">
+                        </label>
+                        <label for="member-type">
+                            <span>سمت:</span> <br>
+                            <select id="member-type">
+                                <option value="راهبر">
+                                    راهبر سیستم
+                                </option>
+                                <option value="مدیر">
+                                    مدیر سیستم
+                                </option>
+                                <option value="کاربر معمولی">
+                                    کاربر معمولی
+                                </option>
+                            </select>
+                        </label>
+                        <label for="phone-number">
+                            <span>شماره تماس:</span> <br>
+                            <input id="phone-number" autocomplete="off" type="tel">
+                        </label>
+                        <button class="login-button addMember-button">افزودن</button>
+                    </form>
+                </section>
+                <div class="members-list">
+                    <section class="member">
+                        <button class="remove-member">حذف عضو</button>
+
+                        <header>
+                            <img src="user-logo.png" alt="عکس پروفایل عضو">
+                            <div>
+                                <span class="member-name">عرفان اسدی</span>
+                                <span>مدیریت</span>
+                            </div>
+                        </header>
+                        <ul class="info">
+                            <li>
+                                <span>شماره تماس:</span>
+                                <span>09123456789</span>
+                            </li>
+                            <li>
+                                <span>نام کاربری:</span>
+                                <span>erfanlv</span>
+                            </li>
+                            <li>
+                                <span>رمز عبور:</span>
+                                <span>98erfan43asadi1002</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="member">
+                        <button class="remove-member">حذف عضو</button>
+
+                        <header>
+                            <img src="user-logo.png" alt="عکس پروفایل عضو">
+                            <div>
+                                <span class="member-name">عرفان اسدی</span>
+                                <span>مدیریت</span>
+                            </div>
+                        </header>
+                        <ul class="info">
+                            <li>
+                                <span>شماره تماس:</span>
+                                <span>09123456789</span>
+                            </li>
+                            <li>
+                                <span>نام کاربری:</span>
+                                <span>erfanlv</span>
+                            </li>
+                            <li>
+                                <span>رمز عبور:</span>
+                                <span>98erfan43asadi1002</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="member">
+                        <button class="remove-member">حذف عضو</button>
+
+                        <header>
+                            <img src="user-logo.png" alt="عکس پروفایل عضو">
+                            <div>
+                                <span class="member-name">عرفان اسدی</span>
+                                <span>مدیریت</span>
+                            </div>
+                        </header>
+                        <ul class="info">
+                            <li>
+                                <span>شماره تماس:</span>
+                                <span>09123456789</span>
+                            </li>
+                            <li>
+                                <span>نام کاربری:</span>
+                                <span>erfanlv</span>
+                            </li>
+                            <li>
+                                <span>رمز عبور:</span>
+                                <span>98erfan43asadi1002</span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </section>
+    </div>
+</body>
+
+</html>
